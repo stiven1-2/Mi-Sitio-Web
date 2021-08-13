@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+p {
+    font-size: 1.4em;
+}
+.alineacion-izquierdap {
+    text-align: left;
+}
+.alineacion-derecha {
+    text-align: right;
+}
+.alineacion-centrado {
+    text-align: center;
+}
+.alineacion-justificado {
+    text-align: justify;
+}
