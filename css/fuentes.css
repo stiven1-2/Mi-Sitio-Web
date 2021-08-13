@@ -20,6 +20,11 @@ p.fuente-net {
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
 }
+span {
+     font-size: 1.8em;
+     color: red;
+     
+}
 /* bebas-neue-regular - latin */
 @font-face {
     font-family: 'Bebas Neue';
