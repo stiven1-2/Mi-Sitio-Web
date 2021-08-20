@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/developed.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="fuentes.html">Fuentes</a></li>
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="colores.html">Colores</a></li>
+        <li><a href="alineacion.html">Alineación</a></li>
+        <li><a href="spacing.html">Spacing</a></li>
+        <li><a href="indent-blockquote.html">Indent y Blockquote</a></li>
+        <li><a href="margin-border-padding.html">Margin-Border-Padding</a></li>
+        <li><a href="imagenes.html">Imagenes</a></li>
+        <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+        <li><a href="contenedores.html">Contenedores</a></li>
+        <li><a href="sub-items.html">Sub-Items</a></li>
+        
+     </ul>
+    <form>
+        <fieldset>
+            <div class="box-formulario"></div>
+            <h1>Aplicaciòn Movil de Servicios</h1>
+            <!--label>Ingrese su(s) Nombre(s)</label>--> <br>
+            <input class="controls" type="text" name="Nombres" placeholder="Ingrese Su(s) Nonbre(s)"> <br>
+            <!--label>Ingrese Su(s) Apellidos</label>--> <br>
+            <input class="controls" type="text" name="Apellidos" placeholder="Ingrese Su(s) Apellidos(s)"> <br>
+            <label>OIbservaciones</label> <br>
+            <textarea class="controls-check" name="observaciones" cols="40" rows="5" maxlength="200" placeholder="Observaciones(max. 200 caracteres)"></textarea> <br>
+            <label>Ver Dias Disponibles</label> <br> <br>
+            <label><input class="controls-check" type="checkbox" value="Lunes">Lunes</label> <br>
+            <label><input class="controls-check" type="checkbox" value="Martes">Martes</label> <br>
+            <label><input class="controls-check" type="checkbox" value="Miercoles">Miercoles</label> <br>
+            <label><input class="controls-check" type="checkbox" value="Jueves">Jueves</label> <br>
+            <label><input class="controls-check" type="checkbox" value="Viernes">Viernes</label> <br>
+            <label>Aplicaciòn Movil de Servicios</label><br>
+            <label><input class="controls-check" type="radio" name="Aplicacion Movil">Aplicaciòn Movil en calamo</label> <br>
+            <label><input class="controls-check" type="radio" name="Aplicacion Movil">Aplicaciòn Movil en Agua blanca</label> <br>
+            <label><input class="controls-check" type="radio" name="Aplicacion Movil">Aplicaciòn Movil en Solarte</label> <br>
+            <label><input class="controls-check" type="radio" name="Aplicacion Movil">Aplicaciòn Movil en los lagos</label> <br>
+            <label>Seleccione un Servicio</label>
+            <select class="controls" name="Servicios">
+            <option value="servicios de energia">Sevicio de Energia</option>
+            <option value="servicios de gas">Servico de Gas</option>
+            <option value="servicios de agua">Servicio de Agua</option>
+            <option value="servicios de telefono">Servicio de Telèfono</option>
+            <option value="servicios de transporte">Servicio de Transporte</option>
+            <option value="servicios de consignaciòn">Servicio de Consignaciòn</option>
+            </select>
+            <input class="controls-button" type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

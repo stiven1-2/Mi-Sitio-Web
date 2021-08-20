@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Sub-Items</title>
+    <link rel="stylesheet" href="css/sub-items.css">
     <link rel="stylesheet" href="css/developed.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <ul> <nav>
+    <ul> 
         <li><a href="index.html">Inicio</a></li>
         <li><a href="fuentes.html">Fuentes</a></li>
         <li><a href="listas.html">Listas</a></li>
@@ -31,13 +25,22 @@
         <li><a href="sub-items.html">Sub-Items</a></li>
         
      </ul>
-    </nav> 
-    <div class="main-content">
-    <h1>Hola Mundo</h1>
-    <h2>El niño se puso en acción</h2>
-    
-   
-    <a href="https://sena.territorio.la/index.php?login=true">Ir a territorium</a>
-</div>
+    <nav>
+        <ul>
+            <li class="item"><a href="#">Inicio</a></li>
+            <li class="item"><a href="#">Productos</a>
+            <ul class="menu-nivel2">
+            <li class="sub item"><a href="#">MPB</a></li>
+            <li class="sub item"><a href="#">Ruta</a></li>
+            <li class="sub item"><a href="#">Grapel</a></li>
+            <li class="sub item"><a href="#">BMX</a></li>
+        </ul>
+    </li>
+    <li class="item"><a href="#">Patrocinadores</a></li>
+    <li class="item"><a href="#">Contactenos</a></li>
+    <li class="item"><a href="#">Blog</a></li>
+    </ul>
+        
+    </nav>
 </body>
 </html>
