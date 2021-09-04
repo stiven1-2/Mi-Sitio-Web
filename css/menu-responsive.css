@@ -1,118 +1,144 @@
-* { 
+* {
     margin: 0;
     padding: 0;
 }
+h1{
+    text-align: center;
+}
 body {
-    background: gainsboro;
-}
-header { 
-    width: 100%;
-}
-.menu-bar {
-    display: none;
+    background: #FFFFFA;
 }
 
-nav {
-    background: #023B59;
-    position: fixed;
-    width: Calc(100% - 80px);
+header {
+    width: 100%;
+
 }
-ul {
-    list-style: none;
+header nav {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #024959;
 }
 nav ul {
+    list-style: none;
     text-align: right;
-} 
-nav ul li{
+}
+nav ul li {
     display: inline-block;
+    position: relative;
 }
 nav ul li:hover {
-    background: #E6344A;
+    background: #037E8C;
 }
-nav ul li span {
-    margin-right: 10px;
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+nav ul li .children {
+    display: none;
+    position: absolute;
+    background: #024959;
+    text-align: left;
+}
+nav ul li:hover .children {
+    display: block;
+    text-align: left;
+}
+nav ul li .children li {
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,.5);
 }
 nav ul li .icon-chevron-small-down {
     position: relative;
     top: 3px;
     margin-left: 10px;
 }
-
-a {
-    display: block;
-    color: white;
-    padding: 20px;
-    text-decoration: none;
-}
-.children {
+.menu-bar {
     display: none;
-    position: absolute;
-    background: #023B59;
+}
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+}
+header nav ul li {
+    float: left;
 
 }
-nav ul li:hover .children {
+header nav ul li a {
+    color:white;
+    padding: 20px;
     display: block;
+    text-decoration: none;
+
 }
-.children li {
-    display: block;
-    overflow: hidden;
+header nav ul li span {
+    margin-right: 10px;
 }
-.children li a {
-    color:  white;
-    display: block;
-    text-align: left;
+header nav ul li a:hover{
+    background: #037E8C;
 }
-h1 {
-    text-align: right;
-    margin: 10px;
-   font-size: 1.2em;
+section {
+    padding: 20px;
 }
-p {
-    font-size: 1.2em;
-    line-height: 1.3em;
-    
-}
-@media only screen and (max-width: 650px) {
+@media screen and (max-width:800px){
     body {
-        padding-top: 68px;
+        padding-top: 69px;
     }
+    
     .menu-bar {
         display: block;
-        position: fixed;
         width: 100%;
-        background: #06344A;
-        top: 0;
-    }
-    .bt-menu {
-        display: block;
-        padding: 20px;
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-        text-decoration: none;
-        
-    }
-    .menu-bar span {
+        background: #ccc;
+    }   
+     .menu-bar span {
         float: right;
         font-size: 40px;
+    
     }
-    nav {
-        width: 75%;
-        position: fixed;
+    header nav {
+        width: 80%;
         height: 100%;
-        background: #023b599c;
+        left: -100%;
+        margin: 0;
+        position: fixed;
     }
-    nav ul {
-        text-align: left;
-    }
-    nav ul li {
+    header nav ul li {
         display: block;
-        border-bottom: 1px solid  rgba(255,255,255,.5);
+        float: none;
+        border-bottom: 1px solid rgba(255,255,255,.5);
     }
-    .children li {
+    header nav ul {
+        text-align: center;
+    }
+    header nav ul li a {
+        display: block;
+    }
+    header nav ul li .children li {
+        position: relative;
+        width: 100%;
+    }
+
+    nav ul li .icon-chevron-small-down {
+        float: right;
+        flex-direction: column;
+    }
+    nav ul li:hover .children {
         display: none;
+        flex-direction: column;
+    }
+.menu-bar .bt-menu {
+        display: block;
+        padding: 20px;
+        background: #024959;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+       -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       box-sizing: border-box;
     }
 }
-
-
-
