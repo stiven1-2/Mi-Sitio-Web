@@ -2,42 +2,50 @@
     margin: 0;
     padding: 0;
 }
+
 nav {
-    position: fixed; 
-    background-color: rgb(1, 181, 226);
+    position: fixed;
+    background-color: rgb(64, 64, 64, .8);
     height: 100%;
     width: 300px;
     top: 0;
     border-right: 1px;
-
 }
+
 ul {
     list-style: none;
-
-    position:absolute;
+    position: absolute;
     top: 40px;
     left: 5px;
     width: 80%;
+    border-bottom: 100px;
+    border-left: 100px;
+    border-right: 100px;
 }
+
 a {
     text-decoration: none;
-    color: rgb(64,64,64,.8);
+    color: rgb(64, 64, 64, .8);
     font-size: 1.2em;
     display: block;
     border-radius: 5px;
     padding: 35px;
 }
+
 a:hover {
-    background: rgb(0, 110, 255);
+    background-color: rgb(64, 64, 64, .8);
 }
+
 .main-content {
     margin: 40px 40px 40px 320px;
     text-align: justify;
 }
+
 p {
     font-size: 1.5em;
     line-height: 1.6em;
 }
+
 i {
     padding-right: 30px;
 }
