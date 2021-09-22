@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../img/woman-6217377.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+#main {
+    width: 1350px;
+    height: 600px;
+    background-image: url("../img/woman1-6217377.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.bt-inicio {
+    margin-top: 1.20em;
+    text-align: right;
+}
