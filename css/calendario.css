@@ -1,9 +1,45 @@
-* {
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+body {
+    font-family: 'Kaushan Script', 'cursive';
+    background: #f5f7fa;
+    padding: 60px 0;
 }
 
-h1 {
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    max-width: 1200px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+
+.nombre-mes {
     text-align: center;
-    font-family: 'Explora', 'cursive';
+    color: #51565d;
+    font-weight: 400;
+    padding: 30px 0;
+}
+
+.dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: center;
+    height: 120px;
+    border-bottom: 1px solid #a6a8b31f;
+    border-top: 1px solid #a6a8b31f;
+    color: #51565d;
+}
+
+.calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 120px;
+}
+
+.calendario-dia {
+    border-bottom: 1px solid #a6a8b31f;
+    border-top: 1px solid #a6a8b31f;
+    padding: 14px 20px;
+    color: #51565d;
 }
