@@ -43,7 +43,7 @@ section {
     grid-area: section;
 }
 
-article {
+.article {
     max-width: 400px;
     margin-left: 20px;
     margin-right: 20px;
@@ -97,6 +97,28 @@ article {
 .titulo-articulo {
     margin: 10px;
     font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 600px) and (max-width:900px) {
+    .main-content {
+        width: 90%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        gap: 20px;
+        grid-template: "header    nsav" 100px "section  section" 350px "article-1 article-2" auto "article-3 article-4" auto "article-5 article-6" auto / 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width:600px) {
+    .main-content {
+        width: 90%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        gap: 20px;
+        grid-template: "header" 100px "nav" 100px "section" 100px "article-1" auto "article-2" auto "article-3" auto "article-4" auto "article-5" auto "article-6" auto / 1fr 1fr;
+    }
 }
 
 
