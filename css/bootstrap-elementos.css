@@ -1,0 +1,33 @@
+.box-1 {
+    background: darkcyan;
+    color: white;
+    height: 90px;
+    font-size: 1.7em;
+    margin-bottom: .1em;
+}
+
+.grillas {
+    margin-bottom: 30px;
+}
+
+.row>[class^="col-"] {
+    border: 1px solid rgb(48, 48, 48, .9);
+}
+
+.column {
+    border: 1px solid rgb(48, 48, 48, .8);
+    margin-bottom: 30px;
+}
+
+.col {
+    border: 1px solid rgb(48, 48, 48, .8);
+}
+
+.grid {
+    border: 1px solid rgb(48, 48, 48, .8);
+    margin-bottom: 30px;
+}
+
+.g-col-4 {
+    border: 1px solid rgb(48, 48, 48, .8);
+}
