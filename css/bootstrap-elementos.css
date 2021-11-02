@@ -13,23 +13,16 @@
 }
 
 .row>[class^="col-"] {
-    
+    border: 1px solid rgb(48, 48, 48, .8);
 }
 
 .column {
-   
     margin-bottom: 30px;
-}
-
-.col {
-    border: 1px solid rgb(48, 48, 48, .8);
 }
 
 .grid {
-    border: 1px solid rgb(48, 48, 48, .8);
     margin-bottom: 30px;
 }
-
 
 .row {
     margin-bottom: 30px;
@@ -38,6 +31,7 @@
 .point-monitor {
     cursor: pointer;
 }
+
 select {
     margin-bottom: 30px;
 }
