@@ -35,3 +35,9 @@
 select {
     margin-bottom: 30px;
 }
+
+
+.space-cards{
+    margin: 20px;
+    padding: 20px;
+}
