@@ -20,7 +20,7 @@ var tematica = "Programación Orientada a Objetos";
 console.log("Longitud: " + tematica.length);
 
 /*Buscando Espacios dobles */
-var nombres = "Kevin Stiven";
+var nombres = "Diego SalazarS";
 for (i = 0; i < nombres.length; i++) {
     if (nombres.slice(i, (i + 2)) === "  ") {
         console.log("La cadena contiene espacios ");
@@ -46,11 +46,11 @@ if (firstChar !== -1) {
 }
 
 /*Estrayendo el primer caracter */
-var primerNombre = "Kevin";
+var primerNombre = "Diego";
 var primerCaracter = primerNombre.charAt(0);
 console.log(primerCaracter);
 /*Estrayendo el ultimo caracter */
-var primerNombre = "Kevin";
+var primerNombre = "Diego";
 var primerCaracter = primerNombre.charAt(primerNombre.length - 1);
 console.log(primerCaracter)
     /*Buscando Caracteres Especiales */
