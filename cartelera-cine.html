@@ -15,63 +15,57 @@
 </head>
 
 <body>
-    <header>
-        <div class="contenedor">
-            <h2 class="logotipo">cartelera Cine</h2>
-            <nav>
-                <a href="#" class="activo">Inicio</a>
-                <a href="#">Programas</a>
-                <a href="#">Peliculas</a>
-                <a href="#">Mas recientes</a>
-                <a href="#">Mi lista</a>
-            </nav>
 
-        </div>
-    </header>
+    <h3>Leyendo en el DOM el contenido de un input text</h3>
+    <input type="text" id="nombre" placeholder="Ingrese su Nombre..."><br>
+    <h3>Leyendo en el DOM el contenido del pàrrafo</h3>
+    <p id="parr">Texto serà leido desde javaScript </p>
+    <input type="button" onclick="verInfo();" value="Enviar">
+    <h3>Al dar click sobre la siguiente imagen, llamamos una funciòn para desaparecerla</h3>
+
 
     <main>
         <div class="pelicula-principal">
         </div>
-        <div class="Peliculas-recomendadas contenedor">
+        <div class="peliculas-recomendadas contenedor">
             <div class="contenedor-titulo-controles">
-
                 <h3>Peliculas Recomendadas</h3>
                 <div class="indicadores"></div>
-
             </div>
-
             <div class="contenedor-principal">
                 <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
-
                 <div class="contenedor-carousel">
-                    <div class="carousel">
-                        <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
-
-                        <div class="pelicula">
-                            <a href="#"> <img src="img2/tileburnedin.jfif" alt=""></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"> <img src="img2/5915477.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt=""></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"> <img src="img2/acero-puro-pelicula.jpg" alt=""></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"> <img src="img2/bdf0a9_f55d225ba77045e68414805405cef494_mv2.jpg" alt=""></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"> <img src="img2/First_Blood.jpg" alt=""></a>
-                        </div>
-                        <div class="pelicula">
-                            <a href="#"> <img src="img2/peliculas-de-accion-600x889.jpg" alt=""></a>
-                        </div>
-
-
-                    </div>
+                    <div class="carousel"></div>
                 </div>
+                <div class="peliculas">
+                    <a href="#"><img src="img2/184652-estrenos-cine-agosto-2016-mejores-peliculas-cartelera.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"> <img src="img2/tileburnedin.jfif" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"> <img src="img2/5915477.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"> <img src="img2/acero-puro-pelicula.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                    <a href="#"> <img src="img2/bdf0a9_f55d225ba77045e68414805405cef494_mv2.jpg" alt=""></a>
+                </div>
+
+
+
+
+                <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
 
             </div>
         </div>
+
+
+
+
+
+
 
         <script src="js/cartelera-cine.js"></script>
     </main>
