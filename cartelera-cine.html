@@ -6,69 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartelera de cine</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Istok+Web:ital@1&family=Kalam&family=Lobster&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/cartelera-cine.css">
-    <link rel="stylesheet" href="icons/all.css">
+
 
 </head>
 
 <body>
+    <div>
+        <img id="portada" class="img-principal" src="img2/Zombieland-hbo-max-1024x576.jpg  ">
+    </div>
+    <div class="peliculas">
+        <img id="acero-puro-pelicula" src="img2/acero-puro-pelicula.jpg" onmouseover="interConArg('portada', 'img2/acero-puro-pelicula.jpg')">
+        <img id="acero-puro-pelicula" src="img2/5915477.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" onmouseover="interConArg('portada', 'img2/5915477.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg')">
+        <img id="acero-puro-pelicula" src="img2/peliculas-de-accion-600x889.jpg" onmouseover="interConArg('portada', 'img2/peliculas-de-accion-600x889.jpg')">
+        <img id="acero-puro-pelicula" src="img2/First_Blood.jpg" onmouseover="interConArg('portada', 'img2/First_Blood.jpg')">
+        <img id="acero-puro-pelicula" src="img2/Spider-Man-3-Andrew-Garfield-and-Tobey-Maguire-1.jpg" onmouseover="interConArg('portada', 'img2/Spider-Man-3-Andrew-Garfield-and-Tobey-Maguire-1.jpg')">
+    </div>
 
-    <h3>Leyendo en el DOM el contenido de un input text</h3>
-    <input type="text" id="nombre" placeholder="Ingrese su Nombre..."><br>
-    <h3>Leyendo en el DOM el contenido del pàrrafo</h3>
-    <p id="parr">Texto serà leido desde javaScript </p>
-    <input type="button" onclick="verInfo();" value="Enviar">
-    <h3>Al dar click sobre la siguiente imagen, llamamos una funciòn para desaparecerla</h3>
+    <script src="js/cartelera-cine.js"></script>
 
-
-    <main>
-        <div class="pelicula-principal">
-        </div>
-        <div class="peliculas-recomendadas contenedor">
-            <div class="contenedor-titulo-controles">
-                <h3>Peliculas Recomendadas</h3>
-                <div class="indicadores"></div>
-            </div>
-            <div class="contenedor-principal">
-                <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
-                <div class="contenedor-carousel">
-                    <div class="carousel"></div>
-                </div>
-                <div class="peliculas">
-                    <a href="#"><img src="img2/184652-estrenos-cine-agosto-2016-mejores-peliculas-cartelera.jpg" alt=""></a>
-                </div>
-                <div class="pelicula">
-                    <a href="#"> <img src="img2/tileburnedin.jfif" alt=""></a>
-                </div>
-                <div class="pelicula">
-                    <a href="#"> <img src="img2/5915477.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt=""></a>
-                </div>
-                <div class="pelicula">
-                    <a href="#"> <img src="img2/acero-puro-pelicula.jpg" alt=""></a>
-                </div>
-                <div class="pelicula">
-                    <a href="#"> <img src="img2/bdf0a9_f55d225ba77045e68414805405cef494_mv2.jpg" alt=""></a>
-                </div>
-
-
-
-
-                <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
-
-            </div>
-        </div>
-
-
-
-
-
-
-
-        <script src="js/cartelera-cine.js"></script>
-    </main>
 </body>
 
 </html>
