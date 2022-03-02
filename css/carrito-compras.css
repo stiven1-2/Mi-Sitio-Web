@@ -4,6 +4,10 @@
     width: 900px;
 }
 
+.img-principal {
+    text-align: left;
+}
+
 .texto {
     border: 3px solid yellow;
     padding: 10px;
@@ -16,8 +20,6 @@
 .paginacion ul {
     list-style: none;
     text-align: center;
-    border: 1px solid black;
-    width: 100px;
 }
 
 .paginacion ul li {
@@ -43,20 +45,4 @@
 
 .pagina {
     text-align: left;
-}
-
-.contenedor-1 {
-    text-align: right;
-    display: inline-flex;
-    min-height: 10px;
-    text-align: center;
-}
-
-p {
-    text-overflow: unset;
-}
-
-.contenedor-1 p {
-    text-align: left;
-    text-align: center;
 }
