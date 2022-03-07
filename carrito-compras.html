@@ -13,24 +13,37 @@
 </head>
 
 <body>
-    <section class="paginacion">
-        <h3>Costototal $2.000</h3>
-        <h2 class="texto">proceder el pago(2 productos)</h2>
+    <div class="contenedor">
 
+        <div class="text-titulo">
+            <h2> Subtotal cop <label id="costo_producto">52000</label> </h2>
+            <div class="titulo">
+                <h3> Proceder al pago (<span id="can_Productos">1</span> Productos) </h3>
+            </div>
+        </div>
 
+        <br><br>
 
+        <div class="imagen">
+            <img src="img2/D_NQ_NP_2X_740745-MLA45733252662_042021-F.webp.jpg" width="230px" alt="Divergente">
+            <br>
+            <div class="sumar-restar">
+                <button role="button" id="resta" class="restar" onclick="funRestarProducto();">-</button>
+                <input readonly class="numero" id="cantidad_producto" type="text" value="1">
+                <button role="button" id="suma" class="sumar" onclick="funSumarProducto();">+</button>
+            </div>
+        </div>
 
+        <div class="texto">
+            <p class="text-info">Call of Duty: Modern Warfare es un videojuego de disparos en primera persona desarrollado por Infinity Ward y publicado por Activision.
+                <br><br> Infinity Ward
+                <br><br> videojuego de disparos
+                <br><br> cop$9.200
+            </p>
+            <div class="eliminar-guardar">
+                <button class="btn-eliminar">Eliminar</button> <br> <br>
+                <button class="btn-guardar-tarde">Guardar para mas tarde</button>
+            </div>
+        </div>
 
-        <img class="img-principal" src="img2/516YSipukIL.jpg" width="200px" alt="">
-        <p class="texto-1">Lorem ipsum dolor sit amet consectetur <br> ftrt Totam dolore at quibusdam aliquam,
-            <ul>
-                <div class="pagina">
-                    <li class="page-item"><a class="page-link" href="#"><span class="icon-minus" ></span></a></li>
-                    <li class="page-item"><a class="page-link" href="#">10</a></li>
-                    <li class="page-item"><a class="page-link" href="#"><span class="icon-plus"></span></a></li>
-                </div>
-            </ul>
-    </section>
-</body>
-
-</html>
+    </div>

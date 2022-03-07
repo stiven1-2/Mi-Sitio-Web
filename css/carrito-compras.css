@@ -1,48 +1,94 @@
-.paginacion {
-    margin: 20px 0;
-    border: 1px solid black;
-    width: 900px;
+.contenedor {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template: "titulo  titulo" "imagen  texto ";
+    gap: 10px;
+    position: relative;
+    padding: 1%;
+    border: solid black;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
 }
 
-.img-principal {
-    text-align: left;
+h2 {
+    margin-bottom: 1em;
+}
+
+h3 {
+    margin-bottom: 1em;
+}
+
+.titulo {
+    display: grid;
+    margin: auto;
+    grid-area: titulo;
+    max-width: max-content;
+    text-align: center;
+    background: yellow;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.imagen {
+    grid-area: imagen;
+    margin-top: 1em;
 }
 
 .texto {
-    border: 3px solid yellow;
-    padding: 10px;
-    color: black;
-    background-color: yellow;
-    margin: 10px 0;
-    width: 400px;
+    grid-area: texto;
+    margin-left: 2em;
+    font-family: 'Roboto', sans-serif;
 }
 
-.paginacion ul {
-    list-style: none;
+.text-titulo {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-eliminar {
+    cursor: pointer;
+    padding: 15px;
+    border-radius: auto;
+}
+
+.btn-guardar-tarde {
+    cursor: pointer;
+    padding: 15px;
+    border-radius: auto;
+}
+
+.sumar-restar {
+    margin-left: 50px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: auto;
+}
+
+.restar {
     text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: auto;
 }
 
-.paginacion ul li {
-    display: inline-block;
-    margin-right: 10px;
+.numero {
+    width: 15px;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: auto;
 }
 
-.paginacion ul li a {
-    display: block;
-    color: #fff;
-    background: #024959;
-    text-decoration: none;
+.sumar {
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: auto;
 }
 
-.paginacion ul li a:hover {
-    background: #037E8C;
-}
-
-.paginacion ul li .active {
-    background: #037E8C;
-    font-weight: bold;
-}
-
-.pagina {
-    text-align: left;
+img {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
 }
