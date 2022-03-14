@@ -1,14 +1,13 @@
 "use-strict"
 
 let cantidadProducto
-let sumarProducto = 1;
-let restarProductos = "";
-let totalProductos = 226000;
+let sumarProducto = "1";
+let restarProductos = "1";
+let totalProductos = 239900;
 let cantidadYaProducto
 
-
 function funSumarProducto() {
-    if (sumarProducto < 10) {
+    if (sumarProducto >= 1 & sumarProducto < 10) {
         restarProductos = document.getElementById("cantidad_producto").value = ++sumarProducto;
 
         cantidadProducto = document.getElementById("can_Productos");
@@ -23,7 +22,7 @@ function funSumarProducto() {
 
 function funRestarProducto() {
     if (restarProductos > 1) {
-        document.getElementById("cantidad_producto").value = --restarProductos;
+        sumarProducto = document.getElementById("cantidad_producto").value = --restarProductos;
 
         cantidadProducto = document.getElementById("can_Productos");
         cantidadProducto.innerHTML = restarProductos;

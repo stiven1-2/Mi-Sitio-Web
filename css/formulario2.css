@@ -1,0 +1,72 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+table {
+    align-items: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgba(12, 151, 59, 0.329);
+}
+
+label {
+    align-items: flex-start;
+    margin-left: 5px;
+}
+
+input {
+    margin-left: 5px;
+}
+
+.desc_product {
+    margin-left: 3.5em;
+}
+
+.valor_product {
+    margin-left: 2.5em;
+}
+
+.content {
+    width: 900px;
+    display: block;
+    margin: 50px auto;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+fieldset {
+    background-color: rgba(0, 255, 0);
+}
+
+.table-style {
+    border: 10px solid black;
+    padding: 10px;
+}
+
+td {
+    border: solid 1px;
+    padding: 10px;
+}
+
+tr,
+th {
+    border: solid 1px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.btn-cargar-producto {
+    width: 100%;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 450;
+    background-color: rgb(0, 0, 255, 1);
+}
