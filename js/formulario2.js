@@ -1,6 +1,7 @@
 "use strit"
 //variables globales
 let nodoTabla = undefined;
+let limpiarForm = document.getElementById("content")
 
 function crearEncabezado() {
     nodoTabla = document.createElement("table");
@@ -82,6 +83,15 @@ function cargarInfoTabla(codigo, descripcion, valorUnitario, unidadStock) {
     let nodoUnidadStock = document.createElement("td");
     nodoProducto.appendChild(nodoUnidadStock);
     nodoUnidadStock.appendChild(unidadStock);
+
+    limpiarFormulario();
+}
+
+function limpiarFormulario() {
+    document.getElementById("codigo").value = "";
+    document.getElementById("descripcion").value = "";
+    document.getElementById("valorUnitario").value = "";
+    document.getElementById("unidadStock").value = "";
 }
 
 function validarFormulario() {

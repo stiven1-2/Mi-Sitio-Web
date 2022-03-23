@@ -2,15 +2,11 @@ h1 {
     text-align: center;
 }
 
-body {
-    text-align: center;
-}
-
 table {
     align-items: center;
     margin: 0 auto;
     border-collapse: collapse;
-    background-color: rgba(12, 151, 59, 0.329);
+    background-color: rgb(243, 235, 235);
 }
 
 label {
@@ -38,11 +34,11 @@ input {
 }
 
 fieldset {
-    background-color: rgba(0, 255, 0);
+    background-color: rgb(243, 235, 235);
 }
 
 .table-style {
-    border: 10px solid black;
+    border: 5px solid black;
     padding: 10px;
 }
 
@@ -68,5 +64,5 @@ td {
     padding: 5px;
     font-size: 20px;
     font-weight: 450;
-    background-color: rgb(0, 0, 255, 1);
+    background-color: rgb(243, 235, 235);
 }
