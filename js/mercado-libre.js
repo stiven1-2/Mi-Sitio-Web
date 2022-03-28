@@ -6,7 +6,7 @@ class Automovil {
         this.Imagen = imagen;
     }
 }
-let auto = new Automovil("mazda 3", "Touring", "$ 5500000000", "img2/mazda3.png");
+let auto = new Automovil("mazda 3", " Sport Grand Touring Lx", "$ 840.000.000", "img2/mazda-3.png");
 
 function validarMazda() {
     alert(auto.Marca + "" + auto.Modelo + "" + " que automovil  necesitas¡¡");
@@ -39,7 +39,7 @@ function mostrarVehiculo() {
     imagenAuto.setAttribute("src", auto.Imagen);
 }
 
-let ferrari = new Automovil("ferrari", "Spider Modena", "$ 419.900.000", "img2/ferrari.png");
+
 
 function validarToyota() {
     alert(toyota.Marca + " " + toyota.Modelo + " " + "El auto perfecto para salir a pasear¡¡")
@@ -73,7 +73,7 @@ function mostrarToyota() {
 
 
 }
-let toyota = new Automovil("toyota", "Hilux", "$ 285.000.000", "img2/toyota.png");
+let toyota = new Automovil("toyota", "Hilux", "$ 87.000.000", "img2/toyota2.jpg");
 
 function validarChevrolet() {
     alert(chevrolet.Marca + " " + chevrolet.Modelo + " " + "El auto con buen motor¡¡")
@@ -105,7 +105,7 @@ function mostarChevrolet() {
     contnedorChevrolet.appendChild(imgChevrolet);
     imgChevrolet.setAttribute("src", chevrolet.Imagen)
 }
-let chevrolet = new Automovil("chevrolet", "camaro", "$ 97.000.000", "img2/chevrolet.png");
+let chevrolet = new Automovil("chevrolet", "Camaro 6.2 Ss", "$135.900.000", "img2/chevrolet1.png");
 
 window.addEventListener("keydown", function(event) {
     let busqueda = document.getElementById("textoBusqueda").value;

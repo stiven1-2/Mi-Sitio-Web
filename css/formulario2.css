@@ -6,7 +6,6 @@ table {
     align-items: center;
     margin: 0 auto;
     border-collapse: collapse;
-    background-color: rgb(243, 235, 235);
 }
 
 label {
@@ -33,9 +32,7 @@ input {
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-fieldset {
-    background-color: rgb(243, 235, 235);
-}
+fieldset {}
 
 .table-style {
     border: 5px solid black;
@@ -64,5 +61,5 @@ td {
     padding: 5px;
     font-size: 20px;
     font-weight: 450;
-    background-color: rgb(243, 235, 235);
+    background-color: rgb(18, 59, 243);
 }
