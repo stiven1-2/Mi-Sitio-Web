@@ -6,10 +6,10 @@ class Automovil {
         this.Imagen = imagen;
     }
 }
-let auto = new Automovil("mazda 3", " Sport Grand Touring Lx", "$ 840.000.000", "img2/mazda-3.png");
+let auto = new Automovil("mazda 3", " Sport Grand Touring Lx", "$ 840.000.000", "img2/2022-01-13-MZD3_SPORT_3.png");
 
 function validarMazda() {
-    alert(auto.Marca + "" + auto.Modelo + "" + " que automovil  necesitas¡¡");
+    alert(auto.Marca + "" + auto.Modelo + "" + " que automovil  necesitas");
 
     mostrarVehiculo();
 }
@@ -42,7 +42,7 @@ function mostrarVehiculo() {
 
 
 function validarToyota() {
-    alert(toyota.Marca + " " + toyota.Modelo + " " + "El auto perfecto para salir a pasear¡¡")
+    alert(toyota.Marca + " " + toyota.Modelo + " " + "El auto perfecto para salir a pasear")
 
     mostrarToyota();
 }
@@ -73,7 +73,7 @@ function mostrarToyota() {
 
 
 }
-let toyota = new Automovil("toyota", "Hilux", "$ 87.000.000", "img2/toyota2.jpg");
+let toyota = new Automovil("toyota",  "Hilux",  "$ 87.000.000",  "img2/toyota-hilux-2017-2020.jpg");
 
 function validarChevrolet() {
     alert(chevrolet.Marca + " " + chevrolet.Modelo + " " + "El auto con buen motor¡¡")
@@ -105,13 +105,13 @@ function mostarChevrolet() {
     contnedorChevrolet.appendChild(imgChevrolet);
     imgChevrolet.setAttribute("src", chevrolet.Imagen)
 }
-let chevrolet = new Automovil("chevrolet", "Camaro 6.2 Ss", "$135.900.000", "img2/chevrolet1.png");
+let chevrolet = new Automovil("chevrolet", "Camaro 6.2 Ss", "$135.900.000", "img2/2021-camaro-RED-HOT.jpg");
 
 window.addEventListener("keydown", function(event) {
     let busqueda = document.getElementById("textoBusqueda").value;
     if (event.key == "Enter") {
         limpiarVentana();
-        if (busqueda == "Automoviles Disponibles") {
+        if (busqueda == "Automoviles Nuevos") {
             mostrarVehiculo(auto);
             mostrarToyota(toyota);
             mostarChevrolet(chevrolet);
