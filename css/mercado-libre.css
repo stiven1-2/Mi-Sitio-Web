@@ -16,7 +16,7 @@
 input {
     grid-area: buscar;
     outline: none;
-    border: 1px rgb(25, 25, 25);
+    border: 1px rgb(14, 14, 14);
     cursor: pointer;
     height: 50px;
 }
