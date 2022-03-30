@@ -1,39 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .encabezado {
-    background: rgb(255, 241, 90);
+    background: rgb(255, 241, 89);
+    align-content: center;
+    width: 100%;
     padding: 5px;
-    border-radius: 10px;
-    height: 90px;
+    height: 70px;
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
-    grid-template: "img      buscar   buscar  buscar    a-solid " /
-                    100px     auto    auto   auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template: "   img-mercado-libre    buscar    buscar       i " / 100px auto auto auto;
 }
-.img, .buscar {
-    grid-area: img;
-    display: inline-block;
-    margin-right: 2.5em;
-}
+
 input {
     grid-area: buscar;
     outline: none;
-    border: 1px rgb(14, 14, 14);
+    border: 2px rgb(25, 25, 25);
     cursor: pointer;
-    height: 50px;
+    height: 45px;
 }
+
+::placeholder {
+    text-align: center;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+i {
+    align-content: center;
+    margin-top: .5em;
+}
+
+.main-content {
+    box-sizing: border-box;
+}
+
 .buscar {
+    grid-area: buscar;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-right: 5px;
     align-content: center;
     width: auto;
-    grid-area:buscar;
-    border-radius: 10px;
-    font-family: inherit;
-    font-size: 16px;
+    border-radius: 5px;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
 }
+
 .fa-solid {
-    grid-area: fa-solid;
+    grid-area: i;
     cursor: pointer;
-    margin-right: 20em;
-    margin-bottom: 500em;
+    position: relative;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.content-auto {
+    display: grid;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+label {
+    grid-area: label;
+    padding: 20px;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
 }

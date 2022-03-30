@@ -73,7 +73,7 @@ function mostrarToyota() {
 
 
 }
-let toyota = new Automovil("toyota",  "Hilux",  "$ 87.000.000",  "img2/toyota-hilux-2017-2020.jpg");
+let toyota = new Automovil("toyota", "Hilux", "$ 87.000.000", "img2/toyota-hilux-2017-2020.jpg");
 
 function validarChevrolet() {
     alert(chevrolet.Marca + " " + chevrolet.Modelo + " " + "El auto con buen motor¡¡")
@@ -111,7 +111,7 @@ window.addEventListener("keydown", function(event) {
     let busqueda = document.getElementById("textoBusqueda").value;
     if (event.key == "Enter") {
         limpiarVentana();
-        if (busqueda == "Automoviles Nuevos") {
+        if (busqueda == "Buscar Automoviles") {
             mostrarVehiculo(auto);
             mostrarToyota(toyota);
             mostarChevrolet(chevrolet);
