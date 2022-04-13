@@ -1,0 +1,52 @@
+.transform1 {
+    width: 140px;
+    height: 140px;
+    background-color: darkblue;
+    transition: tranform 5s;
+}
+
+.transform1:hover {
+    transform: translate(0, 100px);
+}
+
+.transform2 {
+    width: 25px;
+    height: 25px;
+    background-color: yellowgreen;
+    transition: transform 1500px;
+}
+
+.transform2:hover {
+    transform: scale(5, 3);
+    cursor: pointer;
+}
+
+.transform3 {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.transform3:hover {
+    transition: width 1s, height 1s, transform 1s;
+    transform: translate(1%, -1%);
+    width: 150px;
+    height: 150px;
+}
+
+.transform4 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 1100px;
+    margin-top: 147px;
+    position: fixed;
+    transition: width 1s, height 1s, transform 1s;
+    transform: translate(1%, 1%);
+}
+
+.transform4:hover {
+    transform: scale(5, 3);
+    cursor: pointer;
+}

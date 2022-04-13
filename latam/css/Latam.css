@@ -1,0 +1,25 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .encabezado {
+        background: rgb(42, 0, 136);
+        align-content: center;
+        width: 100%;
+        padding: 5px;
+        height: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        cursor: pointer;
+        grid-template: "   img-Latam  " / 100px auto, auto, auto;
+    }
+    
+    .icono_menu {
+        color: #fff;
+        display: inline-block;
+        margin-left: 1000px;
+        cursor: pointer;
+    }
+    
+    .img_principal {}

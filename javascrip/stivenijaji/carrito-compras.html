@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <script src="js/carrito-compras.js"></script>
+    <link rel="stylesheet" href="css/carrito-compras.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <link rel="stylesheet" href="fonts/style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div class="text-titulo">
+            <h2> Subtotal cop <label id="costo_producto">239900</label> </h2>
+            <div class="titulo">
+                <h3> Proceder al pago (<span id="can_Productos">1</span> Productos) </h3>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="imagen">
+            <img src="img2/lkslhybjvkccitzvwxgm_23d99978-47fc-46ed-9c5e-d6003ef6f77f_1800x1800.png" width="230px" alt="">
+            <br>
+            <div class="sumar-restar">
+                <button role="button" id="resta" class="restar" onclick="funRestarProducto();">-</button>
+                <input readonly class="numero" id="cantidad_producto" type="text" value="1">
+                <button role="button" id="suma" class="sumar" onclick="funSumarProducto();">+</button>
+            </div>
+        </div>
+
+        <div class="texto">
+            <p class="text-info">Call of Duty: Modern Warfare es un videojuego de disparos en primera persona desarrollado por Infinity Ward y publicado por Activision.
+                <br><br> Infinity Ward
+                <br><br> videojuego de disparos
+                <br><br> cop$9.200
+            </p>
+            <div class="eliminar-guardar">
+                <button class="btn-eliminar">Eliminar</button> <br> <br>
+                <button class="btn-guardar-tarde">Guardar</button>
+            </div>
+        </div>
+
+    </div>
