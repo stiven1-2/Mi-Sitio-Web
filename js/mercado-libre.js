@@ -20,8 +20,8 @@ let auto5 = new Automovil("Chevrolet", "Camaro", "6.2 ZI1", 2015, 179900000, 589
 let auto6 = new Automovil("Ferrari","3",  "Spider", 2017, 1450000000, 13900, 2000, "Bucaramanga-Santander", "img2/ferrari-Spider.png");
 let auto7 = new Automovil("Yamaha","3",  "Fz", 2016, 7100000, 7700, 2000, "Pitalito-Huila", "img2/yamaha-fz.png");
 let auto8 = new Automovil("Yamaha","3",  "Fz 2.0", 2021, 84000000, 11000, 2000, "Antonio Nariño-Bogotá D.C", "img2/yamaha-fz-2.0.png");
-let auto9 = new Automovil("Ferrari","3",  "", 2012, 104500000, 133900, 2000, "Mexico", "img2/Ferrari.png");
-let auto10 = new Automovil("Ferrari","3",  "", 2018, 145000000, 103900, 2000, "Estados Unidos", "img2/Enzo-Ferrari.jpeg");
+let auto9 = new Automovil("Ferrari","3",  "f8 Spider", 2012, 104500000, 133900, 2000, "Mexico", "img2/ferrari-f8.png");
+let auto10 = new Automovil("Ferrari","3",  "Enzo Spider", 2018, 145000000, 103900, 2000, "Estados Unidos", "img2/Enzo-Ferrari.jpeg");
 let auto11 = new Automovil("Yamaha","3",  "Fz 150 2.0", 2022, 9100000, 16453, 2000, "Medellin-Antioquia", "img2/yamaha-fz-150.png")
 let auto12 = new Automovil("Chevrolet", "Camaro", "6.2 Ss", 2011, 99999990, 34593, 2000, "Usaquén-Bogotá D.C", "img2/camaro1.png");
 function mostrarVehiculo(auto) {

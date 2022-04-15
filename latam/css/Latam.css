@@ -1,25 +1,123 @@
+  
+    
     * {
         margin: 0;
         padding: 0;
     }
-    
-    .encabezado {
-        background: rgb(42, 0, 136);
-        align-content: center;
+    header {
+        display: flex;
+        background: rgb(25,0,140);
+        height: 80px;
         width: 100%;
-        padding: 5px;
-        height: 70px;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    .logo1 {
+        margin-left: 25px;
+    }
+    .icono-barra {
+        color: white;
+        font-size: 1.6em;
+        margin-left: auto;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    #main-content {
+        background-color: rgb(243,242,246);
+    }
+    
+    .style-content-vuelo {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        cursor: pointer;
-        grid-template: "   img-Latam  " / 100px auto, auto, auto;
+        margin: 15px 25px 20px 25px;
+        font-family: 'Lato';
+        background-color: white;
+       /*  border: 1px solid white; */
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px 1px rgba(96,96,96, 0.2);
+        border-color: white;
+        grid-template:  "economic economic economic" 30px  
+                         "horario-salida duracionTxt horario-llegada" 35px
+                        "origen duracion destino" 35px 
+                        "linea-divisora linea-divisora linea-divisora" 2px
+                        "stopping valor valor"   45px/ 
+                        /* "valor valor valor" 45px  */
+                        1fr      1fr   1fr;
+    }
+     .style-horario-salida {
+        grid-area: horario-salida;
+        font-size: 1.5em;
+        color: rgb(27,0,136);
+        margin-top: 5px;
+        margin-left: 25px;
+    }
+    .style-horario-llegada {
+        grid-area: horario-llegada;
+        font-size: 1.5em;
+        color: rgb(27,0,136);
+        margin-top: 5px;
+        margin-right: 25px;
+        text-align: right;
+    }
+    .style-duracion-txt {
+        grid-area: duracionTxt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        /* vertical-align: text-bottom; */
     }
     
-    .icono_menu {
-        color: #fff;
-        display: inline-block;
-        margin-left: 1000px;
-        cursor: pointer;
+    .style-duracion {
+        grid-area: duracion;
+        text-align: center;
     }
+    .style-origen {
+        grid-area: origen;
+        margin-left: 25px;
+    }
+    .style-destino {
+        grid-area: destino;
+        margin-right: 25px;
+        text-align: right;
+    }
+    .linea-divisora {
+        grid-area: linea-divisora;
+        margin: 0 20px 0 20px;
+        background-color: gray;
+        font-size: .2em;
+        /* font-size: 1em; */
+    }
+    /*
     
-    .img_principal {}
+    /* .duracion-vuelo {
+    
+    } */
+     .style-valor {
+        grid-area: valor;
+        font-size: 1.4em;
+        color: rgb(27,0,136);
+        margin-right: 25px;
+        text-align: right;
+    }
+    .style-stopping {
+        grid-area: stopping;
+        font-size: 1em;
+        color: rgb(64,64,64,.9);
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }  
+    .style-economic {
+        grid-area: economic;
+        /* border: 1px solid rgb(64,64,64,.9); */
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px; 
+        padding: 5px;
+        font-size: .95em;
+        width: 150px;
+        color: white;
+        background-color: darkcyan;
+    }    
+   
+    
