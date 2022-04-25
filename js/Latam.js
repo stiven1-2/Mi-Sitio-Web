@@ -1,228 +1,139 @@
 "use strict"
-let fechaVuelo = undefined;
-let jornada = undefined;
-let horarioVuelo = undefined;
-/* let horaSalida = new Date(2022, 02, 10, 8, 12, 0); */
-let horaLlegada = new Date(2022, 02, 13, 12, 12, 0);
+let horaSalida1 = new Date(2022, 4, 5 , 7, 30, 0);
+let horaLlegada1 = new Date(2022, 4, 5, 11, 30, 0);
+
+let horaSalida2 = new Date(2022, 4, 5, 9, 10, 0);
+let horaLlegada2 = new Date(2022, 4, 5, 1, 10, 0);
+
+let horaSalida3 = new Date(2022, 4, 5, 0, 0, 0);
+let horaLlegada3 = new Date(2022, 4, 5, 2, 1, 0);
 
 
-class Vuelos {
-    constructor(horaSalida, horaLlegada, duracion, origen, destino, precio, stopping, economic) {
-        this.horaSalida = horaSalida;
-        this.horaLlegada = horaLlegada;
-        this.duracion = duracion;
-        this.origen = origen;
-        this.destino = destino;
-        this.precio = precio;
-        this.stopping = stopping;
-        this.economic = economic;
-    }
-}
 
-/* window.onload = function() {
-    buscarVuelos();
-} */
-window.addEventListener("keydown", function(event) {
-    let busqueda = document.getElementById("textoBusqueda").value;
-    if (event.key == "Enter") {
-        limpiarVentana();
+let vuelo=[{
+    "origen": "BGT",
+    "destino": "MIA",
+    "horaDeSalida": horaSalida1.getHours()+ ":" + horaSalida1.getMinutes(),
+    "horaDeLlegada": horaLlegada1.getHours()+ ":" + horaLlegada1.getMinutes(),
+    "precio": 714.84000,
+    "parada": "Parada",
+    "economico": "Más Económico",
+    "recomendado": "Recomendado"
+    
+    
+},
+{
+    "origen": "BGT",
+    "destino": "MIA",
+    "horaDeSalida": horaSalida2.getHours()+ ":" + horaSalida2.getMinutes(),
+    "horaDeLlegada": horaLlegada2.getHours()+ ":" + horaLlegada2.getMinutes(),
+    "precio": 5.71708000,
+    "directo": "Directo",
+    "economico": "Más Económico",
+    "recomendado": "Recomendado"
+    
+},
+{
+    "origen": "BGT",
+    "destino": "MIA",
+    "horaDeSalida": horaSalida3.getUTCHours()+ ":" + horaLlegada3.getMinutes(),
+    "horaDeLlegada": horaLlegada3.getHours()+ ":" + horaLlegada3.getMinutes(),
+    "precio": 7.30829000,
+    "directo": "Directo",
+    "economico": "Más Económico",
+    "recomendado": "Recomendado"
     
 
-
-/* function establecerJornada(horaEvento) {
-    if (horaEvento.getHours < 12) {
-        jornada = "A.M.";
-    }
-    else {
-        jornada = "P.M.";
-        horaEvento.setHours = horaEvento.getHours() - 12;
+}
+];
+class Vuelos{
+    constructor(origen, destino, precio,horaSalida,horaLlegada,directo,economico){
+        this.origen= origen;
+        this.destino= destino;
+        this.precio= precio;
+        this.horaSalida= horaSalida;
+        this.horaLlegada= horaLlegada;
+        this.economico= economico;
+        this.recomendado=recomendado
     }
 }
-
-
-if (horaLlegada.getHours < 12) {
-    jornada = "A.M.";
-}
-else {
-    jornada = "P.M.";
-    horaLlegada.setHours = horaLlegada.getHours() - 12;
-} */
-/* horarioSalida = fechaVuelo.getHours() + ":" + fechaVuelo.getMinutes() + " " + jornada; */
-/* let vuelo1 = new Vuelo(horarioVuelo, "Bogotá", "Cartagena", 258000, 1, 1); */
-/* duracion.setMinutes(35);
-duracion.setHours(1);
-alert(duracion); */
-/* horaSalida = establecerJornada(horaSalida);
-horaLlegada = establecerJornada(horaLlegada); */
-function definirJornada(horaEvento) {
-    if (horaEvento.getHours() < 12) {
-        jornada = "a.m.";
+function mostrarVuelos() {
+    for (let i = 0; i < vuelo.length; i++) {
+    cargarVuelos(vuelo[i].origen, vuelo[i].destino,vuelo[i].precio,vuelo[i].horaDeSalida, vuelo[i].horaDeLlegada, vuelo[i].economico, vuelo[i].recomendado);
     }
-    else {
-        jornada = "p.m.";
-        horaEvento.setHours = horaEvento.getHours() - 12;
-    } 
-    let horaEventoTxt = horaEvento.getHours().toString() + ":" + horaEvento.getMinutes().toString() + " " + jornada;
-    return horaEventoTxt;
 }
-/* function establecerHorarios() { */
-    let horaSalida1 = new Date(2022, 02, 12, 10, 12, 0);
-    let horaLlegada1 = new Date(2022, 02, 13, 11, 32, 0);
-    let horaSalida1Str = definirJornada(horaSalida1);
-    let horaLlegada1Str = definirJornada(horaLlegada1);
+function cargarVuelos(origen,destino,precio,horaDeSalida,horaDeLlegada,economico,recomendado){
+    let contenedor=document.createElement("div");
+    let contenMain=document.getElementById("main_content");
+    contenMain.appendChild(contenedor);
+    contenedor.setAttribute("class", "container");
 
-    let horaSalida2 = new Date(2022, 02, 12, 8, 35, 0);
-    let horaLlegada2 = new Date(2022, 02, 13, 9, 45, 0);
-    let horaSalida2Str = definirJornada(horaSalida2);
-    let horaLlegada2Str = definirJornada(horaLlegada2);
+    let origenVuelo=document.createElement("label");
+    contenedor.appendChild(origenVuelo);
+    let nodoOrigen = document.createTextNode(origen);
+    origenVuelo.appendChild(nodoOrigen);
+    origenVuelo.setAttribute("class", "css-origen");
 
-    let horaSalida3 = new Date(2022, 02, 12, 11, 40, 0);
-    let horaLlegada3 = new Date(2022, 02, 13, 12, 50, 0);
-    let horaSalida3Str = definirJornada(horaSalida3);
-    let horaLlegada3Str = definirJornada(horaLlegada3);
+    let destinoVuelo=document.createElement("label");
+    contenedor.appendChild(destinoVuelo);
+    let nodoDestino = document.createTextNode(destino);
+    destinoVuelo.appendChild(nodoDestino);
+    destinoVuelo.setAttribute("class", "css-destino");
 
-    let vuelo = [{
-        "horaSalida":  horaSalida1Str,
-        "horaLlegada": horaLlegada1Str,
-        "duracion": "1h 20Min",
-        "origen": "BOG",
-        "destino": "CTG",
-        "precio": 375000,
-        "stopping": 1,
-        "economic": 1
-    },
-    {
-        "horaSalida":  horaSalida2Str,
-        "horaLlegada": horaLlegada2Str,
-        "duracion": "1h 20Min",
-        "duracion": "1h 20Min",
-        "origen": "BGT",
-        "destino": "CTG",
-        "precio": 282000,
-        "stopping": 1,
-        "economic": 1
-    },
-    {
-        "horaSalida":  horaSalida3Str,
-        "horaLlegada": horaLlegada3Str,
-        "duracion": "1h 20Min",
-        "duracion": "1h 20Min",
-        "origen": "BGT",
-        "destino": "CTG",
-        "precio": 420000,
-        "stopping": 1,
-        "economic": 1
-    }];
-/* } */
+    let precioVuelo=document.createElement("label");
+    contenedor.appendChild(precioVuelo);
+    let nodoPrecio = document.createTextNode("COP $"+ precio);
+    precioVuelo.appendChild(nodoPrecio);
+    precioVuelo.setAttribute("class", "css-precio");
 
+    let salidaVuelo=document.createElement("label");
+    contenedor.appendChild(salidaVuelo);
+    let nodoSalida = document.createTextNode(horaDeSalida+" am");
+    salidaVuelo.appendChild(nodoSalida);
+    salidaVuelo.setAttribute("class", "cssSalida");
 
-function buscarVuelos() {
-    /* establecerHorarios(); */
-    let duracionTxt = "Duración";
-    for(let i = 0; i < vuelo.length; i++) {
-        cargarVuelos(vuelo[i].horaSalida,  vuelo[i].horaLlegada, duracionTxt,  
-            vuelo[i].origen, vuelo[i].destino, vuelo[i].duracion, vuelo[i].precio, vuelo[i].stopping, vuelo[i].economic);
-    } 
+    let linea=document.createElement("hr");
+    contenedor.appendChild(linea);
+    linea.setAttribute("class", "linea");
+
+    let LlegadaVuelo=document.createElement("label");
+    contenedor.appendChild(LlegadaVuelo);
+    let nodoLlegada = document.createTextNode(horaDeLlegada+ " " + "pm");
+    LlegadaVuelo.appendChild(nodoLlegada);
+    LlegadaVuelo.setAttribute("class", "cssLlegada");
+
+    let VueloParada =document.createElement("label");
+    contenedor.appendChild(VueloParada);
+    let nodoVueloParada = document.createTextNode("Parada");
+    VueloParada.appendChild(nodoVueloParada);
+    VueloParada.setAttribute("class", "css-VueloParada");
+
+    let VueloEconomico=document.createElement("label");
+    contenedor.appendChild(VueloEconomico);
+    let nodoVueloEconomico = document.createTextNode(economico);
+    VueloEconomico.appendChild(nodoVueloEconomico);
+    VueloEconomico.setAttribute("class", "cssEconomico");
+
+    let VueloRecomendado=document.createElement("label");
+    contenedor.appendChild(VueloRecomendado);
+    let nodoVueloRecomendado=document.createTextNode(recomendado);
+    VueloRecomendado.appendChild(nodoVueloRecomendado);
+    VueloRecomendado.setAttribute("class", "cssRecomendado")
+
+    let textoDuracion =document.createElement("label");
+    contenedor.appendChild(textoDuracion);
+    let nodotextoDuracionVuelo = document.createTextNode("Duracion");
+    textoDuracion.appendChild(nodotextoDuracionVuelo);
+    textoDuracion.setAttribute("class", "cssTextoDuracion");
+
+    let DuracionVuelo =document.createElement("label");
+    contenedor.appendChild(DuracionVuelo);
+    let nodoDuracionVuelo = document.createTextNode("28hrs");
+    DuracionVuelo.appendChild(nodoDuracionVuelo);
+    DuracionVuelo.setAttribute("class", "cssDuracion");
     
-    /* 
-        alert(vuelos[i].horario);
-    cargarVuelos(vuelos[1]);
-    cargarVuelos(vuelos[2]); */
 }
 
-/* let vuelosCartagena = () => {
-    return vuelos.filter((pizza) => {
-        if (vuelo.destino == "Cartagena") {
-            return true;
-        }
-    });
-} */
-
-/* let vuelosCartagena = vuelos.filter */
-
-
-function cargarVuelos(horaSalida, horaLlegada, duracionTxt, origen, destino, duracionVueloStr, precioVuelo, paradasVuelo,  economicVuelos) {
-    let contentVuelo = document.createElement("div");
-    let contentPrincipal = document.getElementById("main-content");
-    contentPrincipal.appendChild(contentVuelo);
-    contentVuelo.setAttribute("class", "style-content-vuelo");
-
-    let horarioSalida = document.createElement("label");
-    contentVuelo.appendChild(horarioSalida);
-    let txtHorarioSalida = document.createTextNode(horaSalida);
-    horarioSalida.setAttribute("class", "style-horario-salida");
-    horarioSalida.appendChild(txtHorarioSalida);
-
-    let horarioLlegada = document.createElement("label");
-    contentVuelo.appendChild(horarioLlegada);
-    let txtHorarioLlegada = document.createTextNode(horaLlegada);
-    horarioLlegada.setAttribute("class", "style-horario-llegada");
-    horarioLlegada.appendChild(txtHorarioLlegada);
-    
-    let duracionTexto = document.createElement("label");
-    contentVuelo.appendChild(duracionTexto);
-    let duracionStr = document.createTextNode(duracionTxt);
-    duracionTexto.setAttribute("class", "style-duracion-txt");
-    duracionTexto.appendChild(duracionStr);
-
-    let duracionVuelo = document.createElement("label");
-    contentVuelo.appendChild(duracionVuelo);
-    let duracionVueloString = document.createTextNode(duracionVueloStr);
-    duracionVuelo.setAttribute("class", "style-duracion");
-    duracionVuelo.appendChild(duracionVueloString);
-
-    let lineaDivisora = document.createElement("hr");
-    contentVuelo.appendChild(lineaDivisora);
-    lineaDivisora.setAttribute("class", "linea-divisora");
-
-    let origenVuelo = document.createElement("label");
-    contentVuelo.appendChild(origenVuelo);
-    let txtOrigen = document.createTextNode(origen);
-    origenVuelo.setAttribute("class", "style-origen");
-    origenVuelo.appendChild(txtOrigen);
-
-    let destinoVuelo = document.createElement("label");
-    contentVuelo.appendChild(destinoVuelo);
-    let txtDestino = document.createTextNode(destino);
-    destinoVuelo.setAttribute("class", "style-destino");
-    destinoVuelo.appendChild(txtDestino);
-
-    /* let horarioLlegada = document.createElement("label");
-    contentVuelo.appendChild(horarioLlegada);
-    let txtHorarioLlegada = document.createTextNode(horaLlegada);
-    horarioLlegada.setAttribute("class", "style-horario-llegada");
-    horarioLlegada.appendChild(txtHorarioLlegada); */
-    /* let duracion = document.createElement("label");
-    contentVuelo.appendChild(duracion);
-    let txtDuracion = document.createTextNode(vuelo.duracion);
-    duracion.appendChild(txtDuracion);
-    duracion.setAttribute("class", "duracion-vuelo"); */
-
-    let valorTiquete = document.createElement("label");
-    contentVuelo.appendChild(valorTiquete);
-    let precioFormat = new Intl.NumberFormat('es-ES', {}).format(precioVuelo);
-    let txtValorTiquete = document.createTextNode("cop " + precioFormat);
-    valorTiquete.setAttribute("class", "style-valor");
-    valorTiquete.appendChild(txtValorTiquete);
-
-    let stopping = document.createElement("label");
-    contentVuelo.appendChild(stopping);
-    let txtStopping = document.createTextNode(paradasVuelo);
-    let auxTxtStopping = undefined;
-    if (txtStopping.data == 1) {
-        auxTxtStopping = document.createTextNode("Directo");
-    }
-    else {
-        auxTxtStopping = document.createTextNode("Directo");
-    }
-    stopping.setAttribute("class", "style-stopping");
-    stopping.appendChild(auxTxtStopping);
-
-    let economic = document.createElement("div");
-    contentVuelo.appendChild(economic);
-    if (economicVuelos === 1) {
-        let txtEconomic = document.createTextNode("Mas Económico");
-        economic.appendChild(txtEconomic);
-        economic.setAttribute("class", "style-economic");
-    }
+window.onload= function(){
+    mostrarVuelos();
 }

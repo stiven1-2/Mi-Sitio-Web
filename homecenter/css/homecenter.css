@@ -1,0 +1,118 @@
+.avatar-minimize-ana--default{
+    height: 60px;
+        width: 120px;
+        border-radius: 50%;
+        bottom: 20px;
+        cursor: pointer;
+        position: fixed;
+        right: 20px;
+        z-index: 99999991;
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in; 
+        animation-duration: .3s;
+        transition: width 50%, height 90%;
+        
+    }
+    
+    .avatar-minimize-ana--default{
+            background-image: url(https://sodclavcstorageprd.z20.web.core.windows.net/assets/images/avatar-ana.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.3));
+            border-radius: 0;
+            
+    }
+    .header{
+        display: grid;
+        border-bottom: 1px solid grey;
+        margin-top: 10px  ;
+        height: 50px;
+        grid-template-columns: 1fr              1fr       1fr     1fr   ;
+        grid-template-areas:    "logo           buscar     empty       iconos  " ;
+      
+    }
+    
+    .imagenLogo{
+        grid-area: logo;
+        margin-left: 60px;
+        cursor: pointer;
+    }
+    .iconos{
+        grid-area: iconos;
+    }
+    .buscador{
+        grid-area: buscar;
+        
+        width: 250px;
+    }
+    .input{
+        border: white;
+    }
+    .fa-location-dot{
+    cursor: pointer;
+    }
+    .fa-cart-shopping{
+    cursor: pointer;
+    margin-left: 20px;
+    }
+    .fa-user{
+        cursor: pointer;
+        margin-left: 20px;
+    }
+    .MiniCart-module_quantity__dzx-Y {
+        background-color: #dd0021;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        border-radius: 1.125rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        font-size: .75rem;
+        font-weight: 700;
+    }
+    .transform-hide{
+        position: fixed;
+        bottom: 40px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        transition: width;
+        transition: width 600ms, height 600ms;
+        background-color: #f4f3f3;;
+    }
+    .transform-visible{
+    
+        background-color: #f4f3f3;
+        bottom: 0;
+        box-shadow: -1px 2px 7px 0 rgb(0 0 0 / 20%);
+        box-sizing: border-box;
+        height: 90%;
+        overflow: hidden;
+        position: fixed;
+        right: 20px;
+        width: 375px;
+        z-index: 99999991;
+        background-color: #f4f3f3;
+        bottom: 0;
+        box-shadow: -1px 2px 7px 0 rgb(0 0 0 / 20%);
+        box-sizing: border-box;
+        height: 90%;
+        overflow: hidden;
+        position: fixed;
+        right: 20px;
+        width: 375px;
+        z-index: 99999991;
+        
+    }
+    
+    
+    .img1{
+       margin-left: 50px;
+    }
+    .fa-x{
+        cursor: pointer;
+    }

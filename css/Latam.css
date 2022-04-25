@@ -1,81 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-@import url(banner.css);
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+    background-color: rgb(42,0,136);
+    display: grid;
+    grid-template-columns: 1fr        1fr          1fr;
+    grid-template-areas:    "logo      empty       menu";
 }
 
-body {
-    font-family: 'El Messiri', sans-serif;
-}
-
-header {
-    width: 100%;
-    height: 50px;
-    background: rgb(42, 0, 136);
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-}
-
-.contenedor {
-    width: 98%;
-    margin: auto;
+.logoEmirates{
+    padding:10px;
     cursor: pointer;
 }
-
-h1 {
-    float: left;
-}
-
-header .contenedor {
-    display: table;
-}
-
-section {
-    width: 100%;
-    margin-bottom: 25px;
-}
-
-#menu-bar {
-    display: none;
-}
-
-header label {
-    float: right;
-    font-size: 28px;
-    margin: 6px 0;
+.fa-bars{
+    display: flex;
+    font-size: 2em;
+    grid-area: menu;
     cursor: pointer;
+   margin-left: 550px;
+   margin-top: 20px;
 }
 
-.menu {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(51, 51, 51, 0.9);
-    transition: all 0.5s;
-    transform: translateX(-100%);
+.container{
+    margin: 1%;
+    border-radius: 8px;
+    background-color: white;
+    display: grid;
+    grid-template: "styleEconomico            empty             empty"         35px 
+                     "styleSalida         styleTextoDuracion     styleLlegada"     25px 
+                   "style-origen           styleDuracion       style-destino"     35px 
+                   "linea                     linea              linea"            10px
+                   "style-VueloDirecto    style-VueloDirecto             style-precio"      55px/ 
+                    1fr                      1fr                    1fr;
+}
+.cssEconomico{
+    grid-area: styleEconomico;
+    background-color: rgb(0,143,57);
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
     cursor: pointer;
-}
+    width: 150px;
+    font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
 
-.menu a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    height: 60px;
-    padding: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-
-.menu a:hover {
-    background: rgba(255, 255, 255, 0.5);
+.cssRecomendado{
+    grid-area: styleRecomendado;
+    background-color: rgb(255, 235, 10);
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    cursor: pointer;
+    width: 150px;
+    font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
 }
-
-#menu-bar:checked~.menu {
-    transform: translateX(0%);
+.cssSalida{
+    grid-area: styleSalida;
+}
+.cssTextoDuracion{
+    grid-area: styleTextoDuracion;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+.cssLlegada{
+    grid-area: styleLlegada;
+} 
+.css-origen{
+    grid-area: style-origen;
+}
+.cssDuracion{
+    grid-area: styleDuracion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(42,0,136);
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+}
+.css-destino{
+    grid-area: style-destino;
+    font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+}
+.css-VueloParada{
+    grid-area: style-VueloDirecto;
+    font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+}
+.css-precio{
+    grid-area: style-precio;
+    font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+} 
+.linea{
+    grid-area: linea;
+    border: none;
+    border-bottom: solid 1px rgb(0,0,0,0.2);
 }
