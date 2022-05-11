@@ -1,116 +1,165 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: whitesmoke;
-}
-header{
-    background-color: rgb(42,0,136);
-    display: grid;
-    grid-template-columns: 1fr        1fr          1fr;
-    grid-template-areas:    "logo      empty       menu";
+
+.content {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgb(42, 0, 136);
 }
 
-.logoEmirates{
-    padding:10px;
-    cursor: pointer;
+label {
+    float: right;
+    color: #fff;
 }
-.fa-bars{
+
+.fa-solid {
+    margin-top: 15px;
+    margin-left: 100;
+    margin-right: 20px;
+    font-size: 1.3em;
+    font-weight: 400;
+    grid-area: icono-barra;
+    cursor: pointer;
     display: flex;
-    font-size: 2em;
-    grid-area: menu;
-    cursor: pointer;
-   margin-left: 550px;
-   margin-top: 20px;
 }
 
-.container{
-    margin: 1%;
+.content-vuelos {
+    margin-top: 1em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    margin-bottom: 1em;
+    border: 1px solid #f0f0f0;
+    box-shadow: rgb(16 0 79 / 12%) 0px 3px 9px 0px;
     border-radius: 8px;
-    background-color: white;
-    display: grid;
-    grid-template: "styleEconomico            empty             empty"         35px 
-                     "styleSalida         styleTextoDuracion     styleLlegada"     25px 
-                   "style-origen           styleDuracion       style-destino"     35px 
-                   "linea                     linea              linea"            10px
-                   "style-VueloDirecto    style-VueloDirecto             style-precio"      55px/ 
-                    1fr                      1fr                    1fr;
 }
-.cssEconomico{
-    grid-area: styleEconomico;
-    background-color: rgb(0,143,57);
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 8px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-    cursor: pointer;
-    width: 150px;
-    font-family: 'Lato', sans-serif;
-font-family: 'Noto Sans KR', sans-serif;
 
+.desc-vuelo {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.0625rem solid #f0f0f0;
 }
-.cssRecomendado{
-    grid-area: styleRecomendado;
-    background-color: rgb(255, 235, 10);
-    border-bottom-right-radius: 10px;
+
+.cont-economico {
+    display: flex;
     border-top-left-radius: 8px;
-    color: white;
+    overflow: hidden;
+}
+
+.origen-hora,
+.destino-hora-llegada {
+    display: block;
+}
+
+.duracion-del-vuelo {
+    display: block;
+}
+
+.tipos-vuelos {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.pasajero-vuelos {
+    display: block;
+}
+
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(42, 0, 136);
+}
+
+#banner h2 {
+    font-size: 28px;
+}
+
+.span-economico,
+.recomendado {
+    min-width: 100px;
+    padding: 7px;
+    position: relative;
+    left: -8px;
+    font-size: 20px;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 131, 124);
+    clip-path: polygon(calc(0% + 10px) 0px, 100% 0px, calc(100% - 10px) 100%, 0px 100%);
+}
+
+.recomendado {
+    border-radius: 0px 0px 60px;
+    background-color: rgb(252, 195, 0);
+}
+
+.hora-salida,
+.llegada-vuelo {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    color: rgb(42, 0, 136);
+}
+
+.precio {
+    font-size: 20px;
+    color: rgb(42, 0, 136);
+}
+
+.duracion-vuelo {
+    font-weight: normal;
+    font-size: 18px;
+    color: rgb(92, 92, 92);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.vuelo-duracion {
+    font-size: 15px;
+    color: rgb(48, 48, 48);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.origen-vuelo,
+.destino-vuelo {
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: rgb(48, 48, 48);
+}
+
+.destino-vuelo {
+    margin-left: auto;
+}
+
+.vuelo-pasajeros {
+    font-size: 15px;
+    color: rgb(17, 131, 124);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.tipo-vuelo {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: rgb(24, 48, 236);
     cursor: pointer;
-    width: 150px;
-    font-family: 'Lato', sans-serif;
-font-family: 'Noto Sans KR', sans-serif;
-}
-.cssSalida{
-    grid-area: styleSalida;
-}
-.cssTextoDuracion{
-    grid-area: styleTextoDuracion;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-family: 'Lato', sans-serif;
-}
-.cssLlegada{
-    grid-area: styleLlegada;
-} 
-.css-origen{
-    grid-area: style-origen;
-}
-.cssDuracion{
-    grid-area: styleDuracion;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(42,0,136);
-    font-size: 1em;
-    font-family: 'Lato', sans-serif;
-font-family: 'Noto Sans KR', sans-serif;
-}
-.css-destino{
-    grid-area: style-destino;
-    font-family: 'Lato', sans-serif;
-font-family: 'Noto Sans KR', sans-serif;
-}
-.css-VueloParada{
-    grid-area: style-VueloDirecto;
-    font-family: 'Lato', sans-serif;
-font-family: 'Noto Sans KR', sans-serif;
-}
-.css-precio{
-    grid-area: style-precio;
-    font-family: 'Lato', sans-serif;
-font-family: 'Noto Sans KR', sans-serif;
-} 
-.linea{
-    grid-area: linea;
-    border: none;
-    border-bottom: solid 1px rgb(0,0,0,0.2);
 }
